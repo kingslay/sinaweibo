@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0AF575162AB7C9002CF8C6 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0AF573162AB7C9002CF8C6 /* head.png */; };
+		1B0AF576162AB7C9002CF8C6 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0AF574162AB7C9002CF8C6 /* picture.png */; };
+		1B754570162576E100E26552 /* PubUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75456F162576E100E26552 /* PubUtil.m */; };
+		1B8181C7161E8D3D00609B8E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8181C6161E8D3D00609B8E /* Security.framework */; };
 		1B99F3F7160FF9E800FAD42A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3F6160FF9E800FAD42A /* UIKit.framework */; };
 		1B99F3F9160FF9E800FAD42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3F8160FF9E800FAD42A /* Foundation.framework */; };
 		1B99F3FB160FF9E800FAD42A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3FA160FF9E800FAD42A /* CoreGraphics.framework */; };
 		1B99F401160FF9E800FAD42A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F3FF160FF9E800FAD42A /* InfoPlist.strings */; };
 		1B99F403160FF9E800FAD42A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B99F402160FF9E800FAD42A /* main.m */; };
 		1B99F407160FF9E800FAD42A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B99F406160FF9E800FAD42A /* AppDelegate.m */; };
-		1B99F409160FF9E800FAD42A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F408160FF9E800FAD42A /* Default.png */; };
-		1B99F40B160FF9E800FAD42A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F40A160FF9E800FAD42A /* Default@2x.png */; };
-		1B99F40D160FF9E800FAD42A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F40C160FF9E800FAD42A /* Default-568h@2x.png */; };
 		1B99F410160FF9E800FAD42A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F40E160FF9E800FAD42A /* MainStoryboard_iPhone.storyboard */; };
 		1B99F413160FF9E800FAD42A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F411160FF9E800FAD42A /* MainStoryboard_iPad.storyboard */; };
-		1B99F416160FF9E800FAD42A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B99F415160FF9E800FAD42A /* FirstViewController.m */; };
-		1B99F418160FF9E800FAD42A /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F417160FF9E800FAD42A /* first.png */; };
-		1B99F41A160FF9E800FAD42A /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F419160FF9E800FAD42A /* first@2x.png */; };
-		1B99F41D160FF9E800FAD42A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B99F41C160FF9E800FAD42A /* SecondViewController.m */; };
-		1B99F41F160FF9E800FAD42A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F41E160FF9E800FAD42A /* second.png */; };
-		1B99F421160FF9E800FAD42A /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F420160FF9E800FAD42A /* second@2x.png */; };
+		1B99F416160FF9E800FAD42A /* WeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B99F415160FF9E800FAD42A /* WeiBoViewController.m */; };
 		1B99F429160FF9E800FAD42A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F428160FF9E800FAD42A /* SenTestingKit.framework */; };
 		1B99F42A160FF9E800FAD42A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3F6160FF9E800FAD42A /* UIKit.framework */; };
 		1B99F42B160FF9E800FAD42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3F8160FF9E800FAD42A /* Foundation.framework */; };
 		1B99F433160FF9E800FAD42A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F431160FF9E800FAD42A /* InfoPlist.strings */; };
 		1B99F436160FF9E800FAD42A /* sinaweiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B99F435160FF9E800FAD42A /* sinaweiboTests.m */; };
+		1BE21B401625F5F00017E3A8 /* WBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE21B3F1625F5F00017E3A8 /* WBTableViewCell.m */; };
+		3E65777A65BA40038AB58D71 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C369F51A93084F3DB81176C1 /* libPods.a */; };
+		CB3E8040186B2A3600DE18D9 /* RetweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3E803F186B2A3600DE18D9 /* RetweetView.m */; };
+		CB3E8044186C332F00DE18D9 /* HttpRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3E8043186C332F00DE18D9 /* HttpRequestDelegate.m */; };
+		CB67B685186DCD2900AFB3A3 /* CustomCellBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67B684186DCD2900AFB3A3 /* CustomCellBackView.m */; };
+		CBA51D7118506A56008D9488 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA51D7018506A56008D9488 /* PersistencyManager.m */; };
+		CBA51D741851BA7B008D9488 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA51D731851BA7B008D9488 /* Images.xcassets */; };
+		CBA51D77185237AC008D9488 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA51D76185237AC008D9488 /* ImageViewController.m */; };
+		CBCBFB671864006F00373A0C /* json in Resources */ = {isa = PBXBuildFile; fileRef = CBCBFB661864006F00373A0C /* json */; };
+		CBCBFB6E18659F2800373A0C /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCBFB6D18659F2800373A0C /* ImageDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B0AF573162AB7C9002CF8C6 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = head.png; path = ../../sinaweiboDemo/sina/head.png; sourceTree = "<group>"; };
+		1B0AF574162AB7C9002CF8C6 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../sinaweiboDemo/sina/picture.png; sourceTree = "<group>"; };
+		1B75456E162576E100E26552 /* PubUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubUtil.h; sourceTree = "<group>"; };
+		1B75456F162576E100E26552 /* PubUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubUtil.m; sourceTree = "<group>"; };
+		1B8181C6161E8D3D00609B8E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1B99F3F2160FF9E800FAD42A /* sinaweibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinaweibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B99F3F6160FF9E800FAD42A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1B99F3F8160FF9E800FAD42A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,25 +63,35 @@
 		1B99F404160FF9E800FAD42A /* sinaweibo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sinaweibo-Prefix.pch"; sourceTree = "<group>"; };
 		1B99F405160FF9E800FAD42A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1B99F406160FF9E800FAD42A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1B99F408160FF9E800FAD42A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		1B99F40A160FF9E800FAD42A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		1B99F40C160FF9E800FAD42A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1B99F40F160FF9E800FAD42A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		1B99F412160FF9E800FAD42A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		1B99F414160FF9E800FAD42A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		1B99F415160FF9E800FAD42A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		1B99F417160FF9E800FAD42A /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		1B99F419160FF9E800FAD42A /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		1B99F41B160FF9E800FAD42A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		1B99F41C160FF9E800FAD42A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		1B99F41E160FF9E800FAD42A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		1B99F420160FF9E800FAD42A /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		1B99F414160FF9E800FAD42A /* WeiBoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiBoViewController.h; sourceTree = "<group>"; };
+		1B99F415160FF9E800FAD42A /* WeiBoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoViewController.m; sourceTree = "<group>"; };
 		1B99F427160FF9E800FAD42A /* sinaweiboTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sinaweiboTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B99F428160FF9E800FAD42A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1B99F430160FF9E800FAD42A /* sinaweiboTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sinaweiboTests-Info.plist"; sourceTree = "<group>"; };
 		1B99F432160FF9E800FAD42A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B99F434160FF9E800FAD42A /* sinaweiboTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sinaweiboTests.h; sourceTree = "<group>"; };
 		1B99F435160FF9E800FAD42A /* sinaweiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sinaweiboTests.m; sourceTree = "<group>"; };
+		1B99F44716100C8700FAD42A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1BE21B3E1625F5F00017E3A8 /* WBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTableViewCell.h; sourceTree = "<group>"; };
+		1BE21B3F1625F5F00017E3A8 /* WBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTableViewCell.m; sourceTree = "<group>"; };
+		74828AA98E174495833C5533 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C369F51A93084F3DB81176C1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3E803E186B2A3600DE18D9 /* RetweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetweetView.h; sourceTree = "<group>"; };
+		CB3E803F186B2A3600DE18D9 /* RetweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetweetView.m; sourceTree = "<group>"; };
+		CB3E8042186C332F00DE18D9 /* HttpRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestDelegate.h; sourceTree = "<group>"; };
+		CB3E8043186C332F00DE18D9 /* HttpRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestDelegate.m; sourceTree = "<group>"; };
+		CB67B683186DCD2900AFB3A3 /* CustomCellBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackView.h; sourceTree = "<group>"; };
+		CB67B684186DCD2900AFB3A3 /* CustomCellBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackView.m; sourceTree = "<group>"; };
+		CBA51D6F18506A56008D9488 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
+		CBA51D7018506A56008D9488 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
+		CBA51D731851BA7B008D9488 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CBA51D75185237AC008D9488 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		CBA51D76185237AC008D9488 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		CBCBFB661864006F00373A0C /* json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json; sourceTree = "<group>"; };
+		CBCBFB6C18659F2800373A0C /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		CBCBFB6D18659F2800373A0C /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +99,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8181C7161E8D3D00609B8E /* Security.framework in Frameworks */,
 				1B99F3F7160FF9E800FAD42A /* UIKit.framework in Frameworks */,
 				1B99F3F9160FF9E800FAD42A /* Foundation.framework in Frameworks */,
 				1B99F3FB160FF9E800FAD42A /* CoreGraphics.framework in Frameworks */,
+				3E65777A65BA40038AB58D71 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +120,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B447914161153CD009296D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B99F40E160FF9E800FAD42A /* MainStoryboard_iPhone.storyboard */,
+				1B99F411160FF9E800FAD42A /* MainStoryboard_iPad.storyboard */,
+				1B99F414160FF9E800FAD42A /* WeiBoViewController.h */,
+				1B99F415160FF9E800FAD42A /* WeiBoViewController.m */,
+				1BE21B3E1625F5F00017E3A8 /* WBTableViewCell.h */,
+				1BE21B3F1625F5F00017E3A8 /* WBTableViewCell.m */,
+				CB67B683186DCD2900AFB3A3 /* CustomCellBackView.h */,
+				CB67B684186DCD2900AFB3A3 /* CustomCellBackView.m */,
+				CB3E803E186B2A3600DE18D9 /* RetweetView.h */,
+				CB3E803F186B2A3600DE18D9 /* RetweetView.m */,
+				CBA51D75185237AC008D9488 /* ImageViewController.h */,
+				CBA51D76185237AC008D9488 /* ImageViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1B75456D162575C300E26552 /* Pub */ = {
+			isa = PBXGroup;
+			children = (
+				CBCBFB661864006F00373A0C /* json */,
+				1B99F44716100C8700FAD42A /* Constants.h */,
+				1B99F405160FF9E800FAD42A /* AppDelegate.h */,
+				1B99F406160FF9E800FAD42A /* AppDelegate.m */,
+				1B75456E162576E100E26552 /* PubUtil.h */,
+				1B75456F162576E100E26552 /* PubUtil.m */,
+				CBCBFB6C18659F2800373A0C /* ImageDownloader.h */,
+				CBCBFB6D18659F2800373A0C /* ImageDownloader.m */,
+				CB3E8042186C332F00DE18D9 /* HttpRequestDelegate.h */,
+				CB3E8043186C332F00DE18D9 /* HttpRequestDelegate.m */,
+			);
+			name = Pub;
+			sourceTree = "<group>";
+		};
 		1B99F3E7160FF9E800FAD42A = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +163,7 @@
 				1B99F42E160FF9E800FAD42A /* sinaweiboTests */,
 				1B99F3F5160FF9E800FAD42A /* Frameworks */,
 				1B99F3F3160FF9E800FAD42A /* Products */,
+				74828AA98E174495833C5533 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,10 +179,12 @@
 		1B99F3F5160FF9E800FAD42A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B8181C6161E8D3D00609B8E /* Security.framework */,
 				1B99F3F6160FF9E800FAD42A /* UIKit.framework */,
 				1B99F3F8160FF9E800FAD42A /* Foundation.framework */,
 				1B99F3FA160FF9E800FAD42A /* CoreGraphics.framework */,
 				1B99F428160FF9E800FAD42A /* SenTestingKit.framework */,
+				C369F51A93084F3DB81176C1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,19 +192,11 @@
 		1B99F3FC160FF9E800FAD42A /* sinaweibo */ = {
 			isa = PBXGroup;
 			children = (
-				1B99F405160FF9E800FAD42A /* AppDelegate.h */,
-				1B99F406160FF9E800FAD42A /* AppDelegate.m */,
-				1B99F40E160FF9E800FAD42A /* MainStoryboard_iPhone.storyboard */,
-				1B99F411160FF9E800FAD42A /* MainStoryboard_iPad.storyboard */,
-				1B99F414160FF9E800FAD42A /* FirstViewController.h */,
-				1B99F415160FF9E800FAD42A /* FirstViewController.m */,
-				1B99F417160FF9E800FAD42A /* first.png */,
-				1B99F419160FF9E800FAD42A /* first@2x.png */,
-				1B99F41B160FF9E800FAD42A /* SecondViewController.h */,
-				1B99F41C160FF9E800FAD42A /* SecondViewController.m */,
-				1B99F41E160FF9E800FAD42A /* second.png */,
-				1B99F420160FF9E800FAD42A /* second@2x.png */,
+				1B75456D162575C300E26552 /* Pub */,
+				1B447914161153CD009296D6 /* View */,
+				1B99F44616100BAB00FAD42A /* Model */,
 				1B99F3FD160FF9E800FAD42A /* Supporting Files */,
+				CBA51D731851BA7B008D9488 /* Images.xcassets */,
 			);
 			path = sinaweibo;
 			sourceTree = "<group>";
@@ -150,13 +204,12 @@
 		1B99F3FD160FF9E800FAD42A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B0AF573162AB7C9002CF8C6 /* head.png */,
+				1B0AF574162AB7C9002CF8C6 /* picture.png */,
 				1B99F3FE160FF9E800FAD42A /* sinaweibo-Info.plist */,
 				1B99F3FF160FF9E800FAD42A /* InfoPlist.strings */,
 				1B99F402160FF9E800FAD42A /* main.m */,
 				1B99F404160FF9E800FAD42A /* sinaweibo-Prefix.pch */,
-				1B99F408160FF9E800FAD42A /* Default.png */,
-				1B99F40A160FF9E800FAD42A /* Default@2x.png */,
-				1B99F40C160FF9E800FAD42A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,6 +233,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1B99F44616100BAB00FAD42A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBA51D6F18506A56008D9488 /* PersistencyManager.h */,
+				CBA51D7018506A56008D9488 /* PersistencyManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B99F439160FF9E800FAD42A /* Build configuration list for PBXNativeTarget "sinaweibo" */;
 			buildPhases = (
+				E6D79B34D91F4E5FAE6A2BFC /* Check Pods Manifest.lock */,
 				1B99F3EE160FF9E800FAD42A /* Sources */,
 				1B99F3EF160FF9E800FAD42A /* Frameworks */,
 				1B99F3F0160FF9E800FAD42A /* Resources */,
+				F1578E25B2FD48979B794EB2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +298,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 1B99F3E7160FF9E800FAD42A;
 			productRefGroup = 1B99F3F3160FF9E800FAD42A /* Products */;
@@ -251,16 +317,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCBFB671864006F00373A0C /* json in Resources */,
 				1B99F401160FF9E800FAD42A /* InfoPlist.strings in Resources */,
-				1B99F409160FF9E800FAD42A /* Default.png in Resources */,
-				1B99F40B160FF9E800FAD42A /* Default@2x.png in Resources */,
-				1B99F40D160FF9E800FAD42A /* Default-568h@2x.png in Resources */,
 				1B99F410160FF9E800FAD42A /* MainStoryboard_iPhone.storyboard in Resources */,
 				1B99F413160FF9E800FAD42A /* MainStoryboard_iPad.storyboard in Resources */,
-				1B99F418160FF9E800FAD42A /* first.png in Resources */,
-				1B99F41A160FF9E800FAD42A /* first@2x.png in Resources */,
-				1B99F41F160FF9E800FAD42A /* second.png in Resources */,
-				1B99F421160FF9E800FAD42A /* second@2x.png in Resources */,
+				CBA51D741851BA7B008D9488 /* Images.xcassets in Resources */,
+				1B0AF575162AB7C9002CF8C6 /* head.png in Resources */,
+				1B0AF576162AB7C9002CF8C6 /* picture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +351,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		E6D79B34D91F4E5FAE6A2BFC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1578E25B2FD48979B794EB2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -295,10 +388,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3E8040186B2A3600DE18D9 /* RetweetView.m in Sources */,
+				CBA51D77185237AC008D9488 /* ImageViewController.m in Sources */,
 				1B99F403160FF9E800FAD42A /* main.m in Sources */,
 				1B99F407160FF9E800FAD42A /* AppDelegate.m in Sources */,
-				1B99F416160FF9E800FAD42A /* FirstViewController.m in Sources */,
-				1B99F41D160FF9E800FAD42A /* SecondViewController.m in Sources */,
+				CB3E8044186C332F00DE18D9 /* HttpRequestDelegate.m in Sources */,
+				1B99F416160FF9E800FAD42A /* WeiBoViewController.m in Sources */,
+				CBCBFB6E18659F2800373A0C /* ImageDownloader.m in Sources */,
+				CB67B685186DCD2900AFB3A3 /* CustomCellBackView.m in Sources */,
+				CBA51D7118506A56008D9488 /* PersistencyManager.m in Sources */,
+				1B754570162576E100E26552 /* PubUtil.m in Sources */,
+				1BE21B401625F5F00017E3A8 /* WBTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +509,28 @@
 		};
 		1B99F43A160FF9E800FAD42A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74828AA98E174495833C5533 /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/SDWebImage\"",
+				);
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					"\"$(PODS_ROOT)/Weibo/libWeiboSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ImageIO,
+					"-lWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,10 +538,28 @@
 		};
 		1B99F43B160FF9E800FAD42A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74828AA98E174495833C5533 /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/SDWebImage\"",
+				);
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					"\"$(PODS_ROOT)/Weibo/libWeiboSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ImageIO,
+					"-lWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -482,6 +618,7 @@
 				1B99F43B160FF9E800FAD42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B99F43C160FF9E800FAD42A /* Build configuration list for PBXNativeTarget "sinaweiboTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +627,7 @@
 				1B99F43E160FF9E800FAD42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,15 @@
+PODS:
+  - SDWebImage (3.5.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.5.1)
+  - Weibo (2.4.1)
+
+DEPENDENCIES:
+  - SDWebImage (~> 3.5.1)
+  - Weibo (~> 2.4.1)
+
+SPEC CHECKSUMS:
+  SDWebImage: a408b548a634b792372e07e753fc1079aff5032a
+  Weibo: 02a785c779337679f3627b9f889b1123a56dc3a3
+
+COCOAPODS: 0.28.0

@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/SDWebImage" "${PODS_ROOT}/Headers/Weibo"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Weibo/libWeiboSDK"
+OTHER_LDFLAGS = -ObjC -lWeiboSDK -framework ImageIO
+PODS_ROOT = ${SRCROOT}/Pods
