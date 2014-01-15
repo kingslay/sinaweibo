@@ -9,6 +9,7 @@
 #import "HttpRequestDelegate.h"
 #import "PubUtil.h"
 #import "WeiBoViewController.h"
+#import "WBModel.h"
 
 @implementation HttpRequestDelegate
 #pragma mark - WBHttpRequestDelegate Methods
@@ -51,7 +52,11 @@
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
     UINavigationController *navBar = (UINavigationController*)[[UIApplication sharedApplication] delegate].window.rootViewController;
     WeiBoViewController * weiBoViewController =(WeiBoViewController*)[navBar topViewController];
-    NSArray *otherArray = [dict objectForKey:@"statuses"];
+    NSMutableArray *otherArray = [[NSMutableArray alloc] init];
+    for (NSDictionary *JSONDictionary in [dict objectForKey:@"statuses"]) {
+         [otherArray addObject:[MTLJSONAdapter modelOfClass:[WBModel class] fromJSONDictionary:JSONDictionary error:nil]];
+    }
+   
     if ([otherArray count]>0) {
         if ([request.tag isEqualToString:@"refresh"]) {
             [PubUtil.timeLine removeAllObjects];

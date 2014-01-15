@@ -11,25 +11,28 @@
 #import "WBTableViewCell.h"
 #import "Constants.h"
 #import <Weibo/WeiboSDK.h>
+#import "WBModel.h"
 
-
-@implementation WeiBoViewController{
-    UILabel *tableHeaderView;
+@implementation WeiBoViewController {
+    UILabel* tableHeaderView;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImageView *bgImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgImage"]];
-    
+    UIImageView* bgImage =
+        [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgImage"]];
+
     [[self tableView] setBackgroundView:bgImage];
-    [[self tableView ]setDelegate:self];
+    [[self tableView] setDelegate:self];
     [[self tableView] setDataSource:self];
-    UILabel *tableFooterView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 40)];
+    UILabel* tableFooterView = [[UILabel alloc]
+        initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 40)];
     tableFooterView.text = @"加载更多";
     tableFooterView.textAlignment = NSTextAlignmentCenter;
-    self.tableView.tableFooterView =tableFooterView;
-     tableHeaderView = [[UILabel alloc]initWithFrame:CGRectMake(0, -40, self.tableView.frame.size.width, 40)];
+    self.tableView.tableFooterView = tableFooterView;
+    tableHeaderView = [[UILabel alloc]
+        initWithFrame:CGRectMake(0, -40, self.tableView.frame.size.width, 40)];
     tableHeaderView.text = @"下拉更新";
     tableHeaderView.textAlignment = NSTextAlignmentCenter;
     [self.tableView addSubview:tableHeaderView];
@@ -38,62 +41,62 @@
 
 #pragma mark - UITableViewDelegate Methods
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView*)tableView
+    didSelectRowAtIndexPath:(NSIndexPath*)indexPath
 {
-    
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView*)tableView
+    heightForRowAtIndexPath:(NSIndexPath*)indexPath
 {
-    WBTableViewCell *cell= (WBTableViewCell*)[self tableView:tableView cellForRowAtIndexPath:indexPath];
+    WBTableViewCell* cell = (WBTableViewCell*)
+        [self tableView:tableView
+            cellForRowAtIndexPath:indexPath];
     return cell.frame.size.height;
 }
 
 #pragma mark - UITableViewDataSource Methods
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView
 {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView*)tableView
+    numberOfRowsInSection:(NSInteger)section
 {
     return [[PubUtil timeLine] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell*)tableView:(UITableView*)tableView
+        cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
-    NSDictionary *detail = [[PubUtil timeLine] objectAtIndex:indexPath.row];
-    NSString *identifier;
-    if([detail objectForKey:@"retweeted_status"]){
-        identifier = retweetWeiboCellIdentifier;
-    }else{
-        identifier = weiboCellIdentifier;
-    }
-    WBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    cell.indexPath = indexPath;
-    [cell initDataByDict:detail tableView:tableView];
+    WBModel* model = [[PubUtil timeLine] objectAtIndex:indexPath.row];
+    WBTableViewCell* cell =
+        [tableView dequeueReusableCellWithIdentifier:model.identifier];
+    [cell initDataByModel:model
+                tableView:tableView];
     return cell;
-   
 }
 
-- (IBAction)refresh:(id)sender {
+- (IBAction)refresh:(id)sender
+{
     PubUtil.refresh;
 }
-- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView
 {
-   
 }
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+- (void)scrollViewDidEndDecelerating:(UIScrollView*)scrollView
 {
     if (scrollView.contentOffset.y > scrollView.frame.size.height) {
         CGFloat scrollPosition = scrollView.contentSize.height - scrollView.frame.size.height - scrollView.contentOffset.y;
-        if (scrollPosition < self.tableView.tableFooterView.frame.size.height){
+        if (scrollPosition < self.tableView.tableFooterView.frame.size.height) {
             PubUtil.loadMore;
         }
     }
 }
--(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+- (void)scrollViewDidEndDragging:(UIScrollView*)scrollView
+                  willDecelerate:(BOOL)decelerate
 {
     if (scrollView.contentOffset.y <= 0 - tableHeaderView.frame.size.height) {
         PubUtil.loadNew;

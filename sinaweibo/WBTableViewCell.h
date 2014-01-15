@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBModel.h"
 
 @interface WBTableViewCell : UITableViewCell
 //自定义图像
 @property (strong, nonatomic) IBOutlet UIImageView *profile_image;
-@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UILabel *screen_name;
 @property (strong, nonatomic) IBOutlet UILabel *text;
 //缩略图
 @property (strong, nonatomic) IBOutlet UIImageView *thumbnail_pic;
@@ -20,6 +21,5 @@
 @property (strong, nonatomic) IBOutlet UIView *retweetview;
 
 @property (strong, nonatomic) NSString *original_pic_URL;
-@property (nonatomic) NSIndexPath *indexPath;
-- (void)initDataByDict:(NSDictionary *)detail tableView:(UITableView *)tableVie;
+- (void)initDataByModel:(WBModel *)model tableView:(UITableView *)tableVie;
 @end

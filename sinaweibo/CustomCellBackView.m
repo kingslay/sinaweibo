@@ -10,32 +10,24 @@
 
 @implementation CustomCellBackView
 
-- (id)init
+- (id)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        self.opaque = false;
+        self.alpha = 0.5f;
     }
     return self;
 }
-
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    if (self.selected) {
-         CGContextSetFillColorWithColor(context, [UIColor grayColor].CGColor);
-        CGContextFillRect(context,rect);
+    CGContextSetAlpha(context, 0.5f);
 
-    }else{
-        CGContextSetFillColorWithColor(context, [UIColor groupTableViewBackgroundColor].CGColor);
-        CGContextFillRect(context,rect);
-        CGContextSetFillColorWithColor(context, [UIColor groupTableViewBackgroundColor].CGColor);
-        CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
-        CGContextFillRect(context, CGRectMake(4, 2, rect.size.width-8, rect.size.height-4));
-
-    }
-    
+    CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
+    CGContextFillRect(
+        context, CGRectMake(4, 2, rect.size.width - 8, rect.size.height - 4));
 }
 @end

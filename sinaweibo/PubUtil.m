@@ -12,77 +12,91 @@
 #import "PersistencyManager.h"
 #import "ImageDownloader.h"
 #import <Weibo/WeiboSDK.h>
+#import "WBModel.h"
 
 @implementation PubUtil
 
-static HttpRequestDelegate *_requestDelegate;
+static HttpRequestDelegate* _requestDelegate;
 
-static UIImage *_placeholder_profile_image;
-static UIImage *_placeholder_thumbnail_pic;
-static NSMutableArray *_timeLine;
-static NSString *token;
+static UIImage* _placeholder_profile_image;
+static UIImage* _placeholder_thumbnail_pic;
+static NSMutableArray* _timeLine;
+static NSString* token;
 
-+(void)initialize
++ (void)initialize
 {
-    [WeiboSDK enableDebugMode:YES];
-    [WeiboSDK registerApp:WBSDKDemoAppKey];
-    _placeholder_profile_image =[UIImage imageNamed:@"head.png"];
-    _placeholder_thumbnail_pic =[UIImage imageNamed:@"picture.png"];
-    _requestDelegate = [[HttpRequestDelegate alloc]init];
-    _timeLine = [[NSMutableArray alloc] init];
-    token = [[NSUserDefaults standardUserDefaults] objectForKey:WBSDKaccessToken];
-    while(!token) {
-        [self loadIn];
-        token = [[NSUserDefaults standardUserDefaults] objectForKey:WBSDKaccessToken];
+    if (self == [PubUtil class]) {
+        [WeiboSDK enableDebugMode:YES];
+        [WeiboSDK registerApp:WBSDKDemoAppKey];
+        _placeholder_profile_image = [UIImage imageNamed:@"head.png"];
+        _placeholder_thumbnail_pic = [UIImage imageNamed:@"picture.png"];
+        _requestDelegate = [[HttpRequestDelegate alloc] init];
+        _timeLine = [[NSMutableArray alloc] init];
+        token =
+            [[NSUserDefaults standardUserDefaults] objectForKey:WBSDKaccessToken];
+        while (!token) {
+            [self loadIn];
+            token =
+                [[NSUserDefaults standardUserDefaults] objectForKey:WBSDKaccessToken];
+        }
     }
 }
-+(void)loadIn
++ (void)loadIn
 {
-    WBAuthorizeRequest *request = [WBAuthorizeRequest request];
+    WBAuthorizeRequest* request = [WBAuthorizeRequest request];
     request.redirectURI = WBSDKRedirectURI;
     request.scope = @"all";
-    request.userInfo = @{@"SSO_From": @"PubUtil",
-                         @"Other_Info_1": [NSNumber numberWithInt:123],
-                         @"Other_Info_2": @[@"obj1", @"obj2"],
-                         @"Other_Info_3": @{@"key1": @"obj1", @"key2": @"obj2"}};
+    request.userInfo = @{
+        @"SSO_From" : @"PubUtil"
+    };
     [WeiboSDK sendRequest:request];
-    
 }
-+(void) httpRequestWithParams:(NSDictionary *)params withTag:tag
++ (void)httpRequestWithParams:(NSDictionary*)params withTag:tag
 {
-    [WBHttpRequest requestWithAccessToken:token url:@"https://api.weibo.com/2/statuses/home_timeline.json" httpMethod:@"GET" params:params delegate:_requestDelegate withTag:tag];
+    [WBHttpRequest requestWithAccessToken:token
+                                      url:@"https://api.weibo.com/2/statuses/"
+                                           "home_timeline.json"
+                               httpMethod:@"GET"
+                                   params:params
+                                 delegate:_requestDelegate
+                                  withTag:tag];
 }
 + (void)refresh
 {
-    [self httpRequestWithParams:nil withTag:@"refresh"];
+    [self httpRequestWithParams:nil
+                        withTag:@"refresh"];
 }
-+(void)loadMore
++ (void)loadMore
 {
-    
-    NSDictionary *dic=[_timeLine lastObject];;
-    NSNumber *max_id =[dic objectForKey:@"id"];
-    long long i = [max_id longLongValue];
+
+    WBModel* model = [_timeLine lastObject];
+
+    long long i = [model.idstr doubleValue];
     i--;
-    [self httpRequestWithParams:@{@"max_id":[[NSNumber numberWithLongLong:i] stringValue]} withTag:@"loadMore"];
-
+    [self httpRequestWithParams:
+            @{
+                @"max_id" : [[NSNumber numberWithLongLong:i] stringValue]
+            }
+                        withTag:@"loadMore"];
 }
-+(void)loadNew
++ (void)loadNew
 {
-    
-    NSDictionary *dic=[_timeLine firstObject];;
-    NSNumber *since_id=[dic objectForKey:@"id"];
-    [self httpRequestWithParams:@{@"since_id":[since_id stringValue]} withTag:@"loadNew"];
+    WBModel* model = [_timeLine lastObject];
+    [self httpRequestWithParams:@{
+                                    @"since_id" : model.idstr
+                                }
+                        withTag:@"loadNew"];
 }
 
-+(UIImage *)placeholder_profile_image
++ (UIImage*)placeholder_profile_image
 {
     return _placeholder_profile_image;
 }
-+(UIImage *)placeholder_thumbnail_pic
++ (UIImage*)placeholder_thumbnail_pic
 {
     return _placeholder_thumbnail_pic;
 }
-+(NSMutableArray *)timeLine
++ (NSMutableArray*)timeLine
 {
     return _timeLine;
 }

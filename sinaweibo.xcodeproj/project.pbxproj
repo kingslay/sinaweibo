@@ -30,6 +30,8 @@
 		CB3E8040186B2A3600DE18D9 /* RetweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3E803F186B2A3600DE18D9 /* RetweetView.m */; };
 		CB3E8044186C332F00DE18D9 /* HttpRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3E8043186C332F00DE18D9 /* HttpRequestDelegate.m */; };
 		CB67B685186DCD2900AFB3A3 /* CustomCellBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67B684186DCD2900AFB3A3 /* CustomCellBackView.m */; };
+		CBA145801886466800DF3C8C /* WBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1457F1886466800DF3C8C /* WBModel.m */; };
+		CBA1458318866EBC00DF3C8C /* WBRetweetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1458218866EBC00DF3C8C /* WBRetweetModel.m */; };
 		CBA51D7118506A56008D9488 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA51D7018506A56008D9488 /* PersistencyManager.m */; };
 		CBA51D741851BA7B008D9488 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA51D731851BA7B008D9488 /* Images.xcassets */; };
 		CBA51D77185237AC008D9488 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA51D76185237AC008D9488 /* ImageViewController.m */; };
@@ -84,6 +86,10 @@
 		CB3E8043186C332F00DE18D9 /* HttpRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestDelegate.m; sourceTree = "<group>"; };
 		CB67B683186DCD2900AFB3A3 /* CustomCellBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackView.h; sourceTree = "<group>"; };
 		CB67B684186DCD2900AFB3A3 /* CustomCellBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackView.m; sourceTree = "<group>"; };
+		CBA1457E1886466800DF3C8C /* WBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBModel.h; sourceTree = "<group>"; };
+		CBA1457F1886466800DF3C8C /* WBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBModel.m; sourceTree = "<group>"; };
+		CBA1458118866EBC00DF3C8C /* WBRetweetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBRetweetModel.h; sourceTree = "<group>"; };
+		CBA1458218866EBC00DF3C8C /* WBRetweetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBRetweetModel.m; sourceTree = "<group>"; };
 		CBA51D6F18506A56008D9488 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
 		CBA51D7018506A56008D9488 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
 		CBA51D731851BA7B008D9488 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -238,6 +244,10 @@
 			children = (
 				CBA51D6F18506A56008D9488 /* PersistencyManager.h */,
 				CBA51D7018506A56008D9488 /* PersistencyManager.m */,
+				CBA1457E1886466800DF3C8C /* WBModel.h */,
+				CBA1457F1886466800DF3C8C /* WBModel.m */,
+				CBA1458118866EBC00DF3C8C /* WBRetweetModel.h */,
+				CBA1458218866EBC00DF3C8C /* WBRetweetModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -388,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA1458318866EBC00DF3C8C /* WBRetweetModel.m in Sources */,
 				CB3E8040186B2A3600DE18D9 /* RetweetView.m in Sources */,
 				CBA51D77185237AC008D9488 /* ImageViewController.m in Sources */,
 				1B99F403160FF9E800FAD42A /* main.m in Sources */,
@@ -398,6 +409,7 @@
 				CB67B685186DCD2900AFB3A3 /* CustomCellBackView.m in Sources */,
 				CBA51D7118506A56008D9488 /* PersistencyManager.m in Sources */,
 				1B754570162576E100E26552 /* PubUtil.m in Sources */,
+				CBA145801886466800DF3C8C /* WBModel.m in Sources */,
 				1BE21B401625F5F00017E3A8 /* WBTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers\"/**",
 					"\"${PODS_ROOT}/Headers/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";
@@ -545,7 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers\"/**",
 					"\"${PODS_ROOT}/Headers/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";
