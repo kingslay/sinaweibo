@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B0AF575162AB7C9002CF8C6 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0AF573162AB7C9002CF8C6 /* head.png */; };
-		1B0AF576162AB7C9002CF8C6 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0AF574162AB7C9002CF8C6 /* picture.png */; };
 		1B754570162576E100E26552 /* PubUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75456F162576E100E26552 /* PubUtil.m */; };
 		1B8181C7161E8D3D00609B8E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8181C6161E8D3D00609B8E /* Security.framework */; };
 		1B99F3F7160FF9E800FAD42A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3F6160FF9E800FAD42A /* UIKit.framework */; };
@@ -50,8 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B0AF573162AB7C9002CF8C6 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = head.png; path = ../../sinaweiboDemo/sina/head.png; sourceTree = "<group>"; };
-		1B0AF574162AB7C9002CF8C6 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../sinaweiboDemo/sina/picture.png; sourceTree = "<group>"; };
 		1B75456E162576E100E26552 /* PubUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubUtil.h; sourceTree = "<group>"; };
 		1B75456F162576E100E26552 /* PubUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubUtil.m; sourceTree = "<group>"; };
 		1B8181C6161E8D3D00609B8E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -210,8 +206,6 @@
 		1B99F3FD160FF9E800FAD42A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1B0AF573162AB7C9002CF8C6 /* head.png */,
-				1B0AF574162AB7C9002CF8C6 /* picture.png */,
 				1B99F3FE160FF9E800FAD42A /* sinaweibo-Info.plist */,
 				1B99F3FF160FF9E800FAD42A /* InfoPlist.strings */,
 				1B99F402160FF9E800FAD42A /* main.m */,
@@ -332,8 +326,6 @@
 				1B99F410160FF9E800FAD42A /* MainStoryboard_iPhone.storyboard in Resources */,
 				1B99F413160FF9E800FAD42A /* MainStoryboard_iPad.storyboard in Resources */,
 				CBA51D741851BA7B008D9488 /* Images.xcassets in Resources */,
-				1B0AF575162AB7C9002CF8C6 /* head.png in Resources */,
-				1B0AF576162AB7C9002CF8C6 /* picture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +520,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"/**",
+					"\"${PODS_ROOT}/Headers\"",
 					"\"${PODS_ROOT}/Headers/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";
@@ -557,7 +549,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"/**",
+					"\"${PODS_ROOT}/Headers\"",
 					"\"${PODS_ROOT}/Headers/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";

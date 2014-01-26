@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <Weibo/WeiboSDK.h>
-@interface AppDelegate : UIResponder <UIApplicationDelegate,WeiboSDKDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, WeiboSDKDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, retain) NSString* wbtoken;
+@property(strong, nonatomic) UIWindow* window;
+@property(strong, retain) NSString* wbtoken;
 @end
