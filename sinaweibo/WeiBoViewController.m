@@ -14,6 +14,7 @@
 #import "WBModel.h"
 
 @implementation WeiBoViewController {
+  CGPoint previousOffSet;
 }
 
 - (void)viewDidLoad {
@@ -40,6 +41,7 @@
   [self.tableView
       setContentOffset:CGPointMake(0, -self.refreshControl.frame.size.height)
               animated:YES];
+  previousOffSet = CGPointZero;
 }
 
 - (void)refreshViewControlEventValueChanged {
@@ -75,6 +77,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
   WBModel *model = [[PubUtil timeLine] objectAtIndex:indexPath.row];
   WBTableViewCell *cell =
       [tableView dequeueReusableCellWithIdentifier:model.identifier];
@@ -86,6 +89,26 @@
   [PubUtil refresh];
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+  BOOL directDown = NO;
+  if (previousOffSet.y < scrollView.contentOffset.y) {
+    directDown = YES;
+  }
+  previousOffSet.y = scrollView.contentOffset.y;
+
+  NSInteger num = scrollView.contentOffset.y + 44;
+  if (directDown) {
+    if (num < 0) {
+      num = 0;
+    }
+    if (num > 44) {
+      num = 44;
+    }
+  } else {
+    num = 0;
+  }
+
+  self.navigationController.navigationBar.transform =
+      CGAffineTransformTranslate(CGAffineTransformIdentity, 0.f, -num);
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
   if (scrollView.contentOffset.y > scrollView.frame.size.height) {
