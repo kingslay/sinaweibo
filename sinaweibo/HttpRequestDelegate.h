@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <Weibo/WeiboSDK.h>
 
-@interface HttpRequestDelegate : NSObject<WBHttpRequestDelegate>
+@interface HttpRequestDelegate : NSObject<WBHttpRequestDelegate,WeiboSDKDelegate>
 
 @end

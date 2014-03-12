@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface WeiBoViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-
+@interface WeiBoViewController
+    : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 - (IBAction)refresh:(id)sender;
 
 @end

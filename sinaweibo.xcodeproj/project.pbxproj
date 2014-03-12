@@ -22,9 +22,7 @@
 		1B99F42A160FF9E800FAD42A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3F6160FF9E800FAD42A /* UIKit.framework */; };
 		1B99F42B160FF9E800FAD42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B99F3F8160FF9E800FAD42A /* Foundation.framework */; };
 		1B99F433160FF9E800FAD42A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B99F431160FF9E800FAD42A /* InfoPlist.strings */; };
-		1B99F436160FF9E800FAD42A /* sinaweiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B99F435160FF9E800FAD42A /* sinaweiboTests.m */; };
 		1BE21B401625F5F00017E3A8 /* WBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE21B3F1625F5F00017E3A8 /* WBTableViewCell.m */; };
-		3E65777A65BA40038AB58D71 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C369F51A93084F3DB81176C1 /* libPods.a */; };
 		CB3E8040186B2A3600DE18D9 /* RetweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3E803F186B2A3600DE18D9 /* RetweetView.m */; };
 		CB3E8044186C332F00DE18D9 /* HttpRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3E8043186C332F00DE18D9 /* HttpRequestDelegate.m */; };
 		CB67B685186DCD2900AFB3A3 /* CustomCellBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67B684186DCD2900AFB3A3 /* CustomCellBackView.m */; };
@@ -35,6 +33,7 @@
 		CBA51D77185237AC008D9488 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA51D76185237AC008D9488 /* ImageViewController.m */; };
 		CBCBFB671864006F00373A0C /* json in Resources */ = {isa = PBXBuildFile; fileRef = CBCBFB661864006F00373A0C /* json */; };
 		CBCBFB6E18659F2800373A0C /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCBFB6D18659F2800373A0C /* ImageDownloader.m */; };
+		CBD9315F18CF48E400683FF8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD9315E18CF48E400683FF8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +68,6 @@
 		1B99F428160FF9E800FAD42A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1B99F430160FF9E800FAD42A /* sinaweiboTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sinaweiboTests-Info.plist"; sourceTree = "<group>"; };
 		1B99F432160FF9E800FAD42A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1B99F434160FF9E800FAD42A /* sinaweiboTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sinaweiboTests.h; sourceTree = "<group>"; };
-		1B99F435160FF9E800FAD42A /* sinaweiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sinaweiboTests.m; sourceTree = "<group>"; };
 		1B99F44716100C8700FAD42A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		1BE21B3E1625F5F00017E3A8 /* WBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTableViewCell.h; sourceTree = "<group>"; };
 		1BE21B3F1625F5F00017E3A8 /* WBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTableViewCell.m; sourceTree = "<group>"; };
@@ -94,6 +91,7 @@
 		CBCBFB661864006F00373A0C /* json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json; sourceTree = "<group>"; };
 		CBCBFB6C18659F2800373A0C /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
 		CBCBFB6D18659F2800373A0C /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		CBD9315E18CF48E400683FF8 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,7 @@
 				1B99F3F7160FF9E800FAD42A /* UIKit.framework in Frameworks */,
 				1B99F3F9160FF9E800FAD42A /* Foundation.framework in Frameworks */,
 				1B99F3FB160FF9E800FAD42A /* CoreGraphics.framework in Frameworks */,
-				3E65777A65BA40038AB58D71 /* libPods.a in Frameworks */,
+				CBD9315F18CF48E400683FF8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +179,7 @@
 		1B99F3F5160FF9E800FAD42A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBD9315E18CF48E400683FF8 /* libPods.a */,
 				1B8181C6161E8D3D00609B8E /* Security.framework */,
 				1B99F3F6160FF9E800FAD42A /* UIKit.framework */,
 				1B99F3F8160FF9E800FAD42A /* Foundation.framework */,
@@ -217,8 +216,6 @@
 		1B99F42E160FF9E800FAD42A /* sinaweiboTests */ = {
 			isa = PBXGroup;
 			children = (
-				1B99F434160FF9E800FAD42A /* sinaweiboTests.h */,
-				1B99F435160FF9E800FAD42A /* sinaweiboTests.m */,
 				1B99F42F160FF9E800FAD42A /* Supporting Files */,
 			);
 			path = sinaweiboTests;
@@ -410,7 +407,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B99F436160FF9E800FAD42A /* sinaweiboTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,20 +511,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74828AA98E174495833C5533 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/SDWebImage\"",
-				);
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\"/**";
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
-					"\"$(PODS_ROOT)/Weibo/libWeiboSDK\"",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -536,6 +531,7 @@
 					"-lWeiboSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -544,19 +540,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74828AA98E174495833C5533 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo/sinaweibo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/SDWebImage\"",
-				);
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\"/**";
 				INFOPLIST_FILE = "sinaweibo/sinaweibo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
-					"\"$(PODS_ROOT)/Weibo/libWeiboSDK\"",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -565,6 +559,7 @@
 					"-lWeiboSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

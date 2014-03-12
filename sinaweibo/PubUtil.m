@@ -31,13 +31,6 @@ static NSString *token;
     _placeholder_thumbnail_pic = [UIImage imageNamed:@"picture.png"];
     _requestDelegate = [[HttpRequestDelegate alloc] init];
     _timeLine = [[NSMutableArray alloc] init];
-    token =
-        [[NSUserDefaults standardUserDefaults] objectForKey:WBSDKaccessToken];
-    while (!token) {
-      [self loadIn];
-      token =
-          [[NSUserDefaults standardUserDefaults] objectForKey:WBSDKaccessToken];
-    }
   }
 }
 + (void)loadIn {
@@ -48,6 +41,13 @@ static NSString *token;
   [WeiboSDK sendRequest:request];
 }
 + (void)httpRequestWithParams:(NSDictionary *)params withTag:tag {
+    if(!token) {
+        token =
+        [[NSUserDefaults standardUserDefaults] objectForKey:WBSDKaccessToken];
+        if(!token) {
+            [self loadIn];
+        }
+    }
   [WBHttpRequest requestWithAccessToken:token
                                     url:@"https://api.weibo.com/2/statuses/"
                                          "home_timeline.json"

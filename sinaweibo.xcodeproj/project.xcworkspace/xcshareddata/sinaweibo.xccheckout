@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2D78D849-EB69-4D5C-B19F-45A21B4E2D1D</string>
+	<string>A40F48A8-EDAD-4212-9247-19FAE99DB862</string>
 	<key>IDESourceControlProjectName</key>
 	<string>sinaweibo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DDA4EEE5-8718-4818-B9B3-8A537F5AD3AD</key>
+		<key>A237F17C-76B9-44FB-8FFF-E3B58AE77703</key>
 		<string>https://github.com/kingslay/sinaweibo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>sinaweibo.xcworkspace</string>
+	<string>sinaweibo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DDA4EEE5-8718-4818-B9B3-8A537F5AD3AD</key>
-		<string>..</string>
+		<key>A237F17C-76B9-44FB-8FFF-E3B58AE77703</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/kingslay/sinaweibo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DDA4EEE5-8718-4818-B9B3-8A537F5AD3AD</string>
+	<string>A237F17C-76B9-44FB-8FFF-E3B58AE77703</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DDA4EEE5-8718-4818-B9B3-8A537F5AD3AD</string>
+			<string>A237F17C-76B9-44FB-8FFF-E3B58AE77703</string>
 			<key>IDESourceControlWCCName</key>
 			<string>sinaweibo</string>
 		</dict>
