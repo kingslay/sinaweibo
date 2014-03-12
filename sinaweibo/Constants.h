@@ -12,7 +12,7 @@
 #define USER_LOGIN_PASSWORD "UserLoginPassWord"
 #define WBSDKDemoAppKey @"2606661890"
 #define WBSDKDemoAppSecret @"0f9416a95a0ba29c8e7ba8a467bf2c3c"
-#define WBSDKaccessToken @"accessToken11"
+#define WBSDKaccessToken @"accessToken"
 #define WBSDKRedirectURI    @"https://api.weibo.com/oauth2/default.html"
 #define weiboCellIdentifier @"weibo"
 #define retweetWeiboCellIdentifier @"retweetweibo"
